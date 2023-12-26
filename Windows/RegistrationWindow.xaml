@@ -1,0 +1,54 @@
+﻿<Window x:Class="Lab4.Windows.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4.Windows"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="650" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label Content="Выберите дату эфира:"/>
+            <DatePicker x:Name="DateBroadcast" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Label Content="Введите код передачи:"/>
+            <TextBox x:Name="CodeBroadcast" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Label Content="Введите имя передачи:"/>
+            <TextBox x:Name="NameBroadcast" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <Label Content="Введите кол-во раз появления в эфире:"/>
+            <TextBox x:Name="Regularity" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4">
+            <Label Content="Введите время в эфире:"/>
+            <TextBox x:Name="TimeOnBroadcast" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5">
+            <Label Content="Введите цену за эфир:"/>
+            <TextBox x:Name="CostBroadcast" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6">
+            <Label Content="Выберите прайс-лист:"/>
+            <ComboBox x:Name="cbPriceList" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="OK" Margin="10 30" Width="100" Click="Button_Click"/>
+            <Button Content="Cancel" Margin="10 30" Width="100" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>
